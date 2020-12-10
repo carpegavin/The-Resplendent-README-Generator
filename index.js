@@ -28,7 +28,7 @@ inquirer.prompt([
     },
     {
       type: 'input',
-      name: 'guidlines',
+      name: 'contribution',
       message: 'What are the contribution guidlines?',
     },
     {
@@ -70,21 +70,21 @@ const generateReadMe = (answers) =>
  ### ${answers.license}
 
  ## Table of Contents
-    - Installation
-    - Usage
-    - Contribution 
-    - Test 
+    - [Installation](#Installation)
+    - [Usage](#Usage)
+    - [Contribution](#Contribution) 
+    - [Test](#Test) 
 
  
  
-    ## Installation
+ ## Installation
         ${answers.installation}
 
  ## Usage 
         ${answers.usage}
 
  ## Contribution
-        ${answers.guidlines}
+        ${answers.contribution}
 
  ## Test 
         ${answers.test}
@@ -107,10 +107,4 @@ promptUser()
 
 
 
-// function to initialize program
-// function init() {
 
-//}
-
-// function call to initialize program
-// init();
