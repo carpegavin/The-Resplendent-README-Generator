@@ -1,4 +1,8 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const util = require('util');
+const writeFileAsync = util.promisify(fs.writeFile);
+const promptUser = () =>
 
 inquirer.prompt([
     {
@@ -50,10 +54,9 @@ inquirer.prompt([
 ]);
 
 
-function generateReadMe(answers) {
-    return `
-    
-    # ${answers.title}
+const generateReadMe = (answers) => 
+
+    `# ${answers.title}
     
     ## ${answers.description}
 
@@ -65,6 +68,9 @@ function generateReadMe(answers) {
         3. Contribution 
         4. Test 
 
+    
+    
+    
     ## Installation Instructions
         ${answers.installation}
 
@@ -82,20 +88,23 @@ function generateReadMe(answers) {
         ${answers.username}
         ### Please e-mail me with any questions!
         ${answers.email}
-    `
-}
+    `;
+
 
     
-
+promptUser()
+.then((answers) => writeFileAsync('README.md', generateReadMe(answers)))
+.then(() => console.log('Successfully created README'))
+.catch((err) => console.error(err));
 
 
 
 
 
 // function to initialize program
-function init() {
+// function init() {
 
-}
+//}
 
 // function call to initialize program
-init();
+// init();
