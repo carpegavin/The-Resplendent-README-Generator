@@ -9,6 +9,7 @@ inquirer.prompt([
       type: 'input',
       name: 'title',
       message: 'What is the title of your README?',
+      
     },
     {
       type: 'input',
@@ -39,7 +40,13 @@ inquirer.prompt([
       type: 'list',
       name: 'license',
       message: 'Please choose a license from the following',
-      choices: ["Apache 2.0", "MIT", "GPLv3", "Creative Commons", "Simplified BSD"],
+      choices: [
+          "Apache 2.0", 
+          "MIT", 
+          "GNU GPL v3", 
+          "Mozilla", 
+          "Boost"
+        ],
     },
     {
       type: 'input',
@@ -56,39 +63,38 @@ inquirer.prompt([
 
 const generateReadMe = (answers) => 
 
-    `# ${answers.title}
+`# ${answers.title}
     
-    ## ${answers.description}
+ ## ${answers.description}
 
-    ### ${answers.license}
+ ### ${answers.license}
 
-    ## Table of Contents
-        1. Installation 
-        2. Usage
-        3. Contribution 
-        4. Test 
+ ## Table of Contents
+    - Installation
+    - Usage
+    - Contribution 
+    - Test 
 
-    
-    
-    
-    ## Installation Instructions
+ 
+ 
+    ## Installation
         ${answers.installation}
 
-    ## Usage information
+ ## Usage 
         ${answers.usage}
 
-    ## Contribution guidlines
+ ## Contribution
         ${answers.guidlines}
 
-    ## Test Instructions
+ ## Test 
         ${answers.test}
     
     
-    ## Questions?
-        ${answers.username}
-        ### Please e-mail me with any questions!
-        ${answers.email}
-    `;
+ ## Questions?
+    ${answers.username}
+    ###Please e-mail me with any questions!
+    ${answers.email}
+`;
 
 
     
