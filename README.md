@@ -1,12 +1,12 @@
-# fgfd
+# The Omega Nemesis Project
     
  ## Description: 
- gfdg
+ Populated from command prompts using node.js and constructed with JS using template literals. Some "ifs" here and some "else's" over there; a few of these() and a couple of ${"} and viola, the bread is risen. 
 
 <br>
 
- ### Boost License
- [![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+ ### GNU License
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 <br>
 
@@ -20,23 +20,23 @@
  
  
  ## Installation
-        dfgdf
+        There are no packages nor dependencies required to make this project function outside of a laptop and your phalanges.
 
  ## Usage 
-        dfgfd
+        Open a terminal, hit it with node index.js, answer the prompts, mash the return/enter key, view the manifested README.md in AWE.
 
  ## Contribution
-        dfgdf
+        Anything. Just contribute anything, a pig pie, an 8 wheeled unicycle, glass a lobster milk, I don't care.
 
  ## Test 
-        dfgdf
+        To test, see 'usage information' above.
     
     
  ## GitHub
- ### https://github.com/dfg
+ ### https://github.com/carpegavin
  
  <br>
 
  ### Questions?
  ## Please e-mail me with any!
- ### dfgdf
+ ### carpe.gavin@gmail.com
