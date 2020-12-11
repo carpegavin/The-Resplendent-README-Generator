@@ -61,14 +61,29 @@ inquirer.prompt([
 ]);
 
 
-const generateReadMe = (answers) => 
+const generateReadMe = (answers) => {
+    let title =""
+    let badge= "";
+    if(answers.license == "Apache 2.0"){
+        title = "Apache 2.0 License"
+        badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    else if (answers.license == "MIT"){
+        title = "MIT License"
+        badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 
-`# ${answers.title}
+    }
+return `# ${answers.title}
     
  ## Description: 
  ${answers.description}
 
- ### ${answers.license}
+<br>
+
+ ### ${title}
+ ${badge}
+
+<br>
 
  ## Table of Contents
 - [Installation](#Installation)
@@ -101,7 +116,7 @@ const generateReadMe = (answers) =>
  ## Please e-mail me with any!
  ### ${answers.email}
 `;
-
+}
 
     
 promptUser()
