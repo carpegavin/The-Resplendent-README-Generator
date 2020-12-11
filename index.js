@@ -65,15 +65,17 @@ const generateReadMe = (answers) =>
 
 `# ${answers.title}
     
- ## ${answers.description}
+ ## Description: 
+ ${answers.description}
 
  ### ${answers.license}
 
  ## Table of Contents
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contribution](#Contribution) 
-    - [Test](#Test) 
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contribution](#Contribution) 
+- [Test](#Test) 
+- [Email](#Questions?)
 
  
  
@@ -90,10 +92,14 @@ const generateReadMe = (answers) =>
         ${answers.test}
     
     
- ## Questions?
-    ${answers.username}
-    ###Please e-mail me with any questions!
-    ${answers.email}
+ ## GitHub
+ ### https://github.com/${answers.username}
+ 
+ <br>
+
+ ### Questions?
+ ## Please e-mail me with any!
+ ### ${answers.email}
 `;
 
 
