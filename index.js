@@ -71,9 +71,22 @@ const generateReadMe = (answers) => {
     else if (answers.license == "MIT"){
         title = "MIT License"
         badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-
     }
-return `# ${answers.title}
+    else if (answers.license == "GNU GPL v3"){
+        title = "GNU License"
+        badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    }
+    else if (answers.license == "Mozilla"){
+        title = "Mozilla License"
+        badge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
+    else if (answers.license == "Boost"){
+        title = "Boost License"
+        badge = "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
+    }
+
+
+    return `# ${answers.title}
     
  ## Description: 
  ${answers.description}
