@@ -1,12 +1,12 @@
-# The Omega Nemesis Project
+# The Resplendent README 
     
  ## Description: 
- Populated from command prompts using node.js and constructed with JS using template literals. Some "ifs" here and some "else's" over there; a few of these() and a couple of ${"} and viola, the bread is risen. 
+ A demonstration of a README built entirely from node.js
 
 <br>
 
- ### GNU License
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+ ### Apache 2.0 License
+ [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 <br>
 
@@ -20,16 +20,16 @@
  
  
  ## Installation
-        There are no packages nor dependencies required to make this project function outside of a laptop and your phalanges.
+        Use your GitHub or  VS Code to view
 
  ## Usage 
-        Open a terminal, hit it with node index.js, answer the prompts, mash the return/enter key, view the manifested README.md in AWE.
+        Gavin Phill
 
  ## Contribution
-        Anything. Just contribute anything, a pig pie, an 8 wheeled unicycle, glass a lobster milk, I don't care.
+        None
 
  ## Test 
-        To test, see 'usage information' above.
+        None
     
     
  ## GitHub
